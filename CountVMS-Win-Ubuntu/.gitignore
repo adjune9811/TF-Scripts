@@ -1,0 +1,50 @@
+# Ignore .terraform directory
+**/.terraform/*
+
+# Ignore .tfstate files
+*.tfstate
+*.tfstate.*
+
+# Ignore crash log files
+crash.log
+
+# Ignore override files as they are usually used to override resources locally and do not need to be checked in
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Ignore CLI configuration files
+.terraformrc
+terraform.rc
+
+# Ignore .tfvars files that are generated automatically or contain secrets
+*.auto.tfvars
+*.auto.tfvars.json
+*.tfvars.json
+
+# Ignore files used to persist variables, which are not always checked in
+terraform.tfstate
+terraform.tfstate.backup
+*.tfplan
+
+# Ignore tfvars as it contains sensitive values like subscription ID and passwords
+terraform.tfvars
+
+# Ignore `.terraform.lock.hcl` file (Terraform 1.0+)
+.terraform.lock.hcl
+
+# Ignore .terraform/plugins
+.terraform/plugins/
+
+# Ignore .tf directory
+**/.tf/*
+
+# Ignore .terraform/environment directory
+**/.terraform/environment/*
+
+# Ignore provider plugin binaries
+*.provider
+
+# Ignore crash.log files
+crash.log
